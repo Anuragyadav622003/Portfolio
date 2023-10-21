@@ -1,0 +1,19 @@
+.box {
+    box-shadow: rgb(0, 0, 0) 0px 14px 28px, rgba(0, 0, 0, 0.55) 0px 10px 10px;
+    
+}
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+button {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-right: 15px;
+    border-radius: 12px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.box:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}

@@ -1,0 +1,25 @@
+.sticky {
+     position: -webkit-sticky; /* Safari */
+     position: sticky;
+     top: 0; /* Adjust this value as needed */
+     z-index: 1000;
+   }
+   nav a.active{
+    color:cyan;
+   
+  }
+   .sidebar{
+    display: none;
+   }
+   .navbar{
+    display: flex;
+   }
+   @media screen and (max-width: 800px)
+   {
+.sidebar{
+  display: flex;
+}
+.navbar{
+  display: none;
+}
+   }

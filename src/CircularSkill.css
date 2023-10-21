@@ -1,0 +1,45 @@
+.container{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap:20px;
+
+}
+.container .progress{
+     position:relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color:#fff;
+    background: #444 linear-gradient( to right,transparent 50%, var(--clr) 0) ;
+    }
+    .container .progress h3{
+         position: absolute;
+         top:50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-size: 1.5rem;
+         z-index: 1;
+    }
+ .progress::before{
+     content: '';
+     display:block;
+     height: 100%;
+     margin-left: 50%;
+     transform-origin: left;
+     border-radius: 0 100% 100% 0/50%;
+
+}
+.progress::after{
+     content: '';
+     position: absolute;
+     inset: 5px;
+     border-radius: 50%;
+     background: #222;
+}
+.progress::before{
+     background: var(--clr);
+     transform: rotate(calc(((var(--i) - 50)* 0.01turn)));
+} 
